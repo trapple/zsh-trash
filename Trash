@@ -4,7 +4,7 @@ if [ -d ~/.trash ]; then
   for i in $@; do
     if [ -e $i ]; then
       mv $i ~/.trash/$DATE/
-    else-
+    else
       echo "$i : not found"
     fi
   done
