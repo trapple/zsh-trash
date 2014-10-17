@@ -4,16 +4,17 @@
 
 # INSTALL
 
-```
 
-# if [-n !$fpath]; then
+if [-n $fpath]; then
 
 ```
 echo 'fpath=($HOME/.zsh/func $fpath)' >> ~/.zshrc
 ```
 fi
 
+```
 cp Trash $YOUR_FPATH
-echo "autoload -Uz trash" >> ~/.zshrc
+echo 'alias rm="trash"' >> ~/.zshrc
+echo 'autoload -Uz trash; >> ~/.zshrc
 ```
 
